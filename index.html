@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ріелторська компанія</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+</head>
+<body>
+<header >
+    <div id="logo">
+<span>Тел.: +38(0382) 619778 - відділ продажу, моб.: +38(067)381 20 40 - відділ продажу , e-mail:manager@dita.ua</span>>
+</div>
+<div id="about">
+
+</div>
+</header>
+<div id="top">
+
+</div>
+<div id="main_about">
+    <div class="intro">
+    <h2>Про нас</h2>
+    </div>
+    <div class="text">
+        <span>
+            Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Ipsam, quidem. Ducimus officiis ipsa vitae aliquid obcaecati porro in voluptatum aperiam!
+             Nam provident a obcaecati laborum. Quasi placeat repellat ab nam!
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+             Quasi aliquid quae enim fuga aliquam quod praesentium perspiciatis ex ut, eius inventore sunt?
+              Est adipisci repellendus accusantium ut placeat qui ipsam!
+        </span>
+    </div>
+</div>
+<div id="map"></div>
+<script type="text/javascript">
+
+    // Определяем переменную map
+    var map;
+
+    // Функция initMap которая отрисует карту на странице
+    function initMap() {
+
+        // В переменной map создаем объект карты GoogleMaps и вешаем эту переменную на <div id="map"></div>
+        map = new google.maps.Map(document.getElementById('map'), {
+            // При создании объекта карты необходимо указать его свойства
+            // center - определяем точку на которой карта будет центрироваться
+            center: {lat: 49.4387, lng: 27.0092},
+                       zoom: 12
+        });
+    }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
+<div id="contacts">
+        <center><h5>Маєте питання , отримати відповідь:</h5></center>
+        <form id="form_input">
+          <label for="name">Ваш телефон <span>*</span></label><br>
+          <input type="text" placeholder="Введiть номер телефону" name="name" id="name"><br>
+          <label for="email">Ваша пошта <span>*</span></label><br>
+                <input type="email" placeholder="Введиiть email" name="email" id="email"><br>
+                <label for="message">Ваше повiдомлення <span>*</span></label><br>
+                <textarea placeholder="Введиiть ваше повiдомлення" name="message" id="message"></textarea><br>
+                <div id="mess_send" class="btn">Вiдправити</div>
+        </form>
+      </div>
+    <footer>
+    </footer>
+</body>
+</html
